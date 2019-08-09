@@ -33,8 +33,6 @@ const FormComp = props => {
             })}
             </div>
         </Segment>
-
-
     )
 }
 

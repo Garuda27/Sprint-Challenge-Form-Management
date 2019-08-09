@@ -1,17 +1,9 @@
 import React from 'react'
-class Card extends React.Component {
+import ReactDom from 'react-dom'
+import { add } from './Card'
 
-    constructor() {
-        super()
-
-    }
-    render() {
-        return (<p>{this.props.data.name}</p>)
-    }
-}
-
-export const add = (a, b) => {
-    return (a + b)
-}; 
-
-export default Card
+describe('Data from API', () => {
+    it('renders the POST objects', () => {
+        expect(add(2, 3)).toBe(5);
+    });
+})
